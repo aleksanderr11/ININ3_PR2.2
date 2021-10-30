@@ -1,6 +1,8 @@
 package com.szymek;
 
-public class Animal {
+import com.szymek.devices.Saleable;
+
+public class Animal implements Saleable {
 
 
     final String species;
@@ -56,5 +58,15 @@ public class Animal {
                 "species='" + species + '\'' +
                 ", weight=" + weight +
                 '}';
+    }
+
+    @Override
+    public void sale() {
+
+    }
+
+    @Override
+    public Double getPrice() {
+        return null;
     }
 }
