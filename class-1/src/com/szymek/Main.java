@@ -22,7 +22,9 @@ public class Main {
 
         // task 2
         Human szymek = new Human();
+        szymek.setSalary(999.0);
         Car coupe = new Car("TT Coupe", "Audi", "black", 10000.0, false);
+        coupe.setValue(4359.0);
         coupe.toString();
 
         szymek.setCar(coupe);
